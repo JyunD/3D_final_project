@@ -1,15 +1,8 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: 4bf49d5c873d20c4d8e1ced793f58c6d
-NativeFormatImporter:
-  externalObjects: {}
-  mainObjectFileID: 0
-=======
 guid: c060eb3ecec09cd4a90e8403be850202
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 2100000
->>>>>>> ccw
   userData: 
   assetBundleName: 
   assetBundleVariant: 

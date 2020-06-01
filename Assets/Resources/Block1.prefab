@@ -58,11 +58,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< HEAD
-  - {fileID: 2100000, guid: 6614d514a362de74c9907ef005714c8d, type: 2}
-=======
   - {fileID: 2100000, guid: dc570dc7be65cc74c8d38370b1424593, type: 2}
->>>>>>> ccw
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -154,11 +150,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< HEAD
-  - {fileID: 2100000, guid: 6614d514a362de74c9907ef005714c8d, type: 2}
-=======
   - {fileID: 2100000, guid: dc570dc7be65cc74c8d38370b1424593, type: 2}
->>>>>>> ccw
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -250,11 +242,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-<<<<<<< HEAD
-  - {fileID: 2100000, guid: 6614d514a362de74c9907ef005714c8d, type: 2}
-=======
   - {fileID: 2100000, guid: dc570dc7be65cc74c8d38370b1424593, type: 2}
->>>>>>> ccw
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -297,13 +285,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 169937729816232125}
-<<<<<<< HEAD
-  - component: {fileID: 5087926367329113681}
-  - component: {fileID: -3001740796852598480}
-=======
   - component: {fileID: -5902692244934407379}
   - component: {fileID: -3884531111263130122}
->>>>>>> ccw
   m_Layer: 0
   m_Name: Block1
   m_TagString: Player
@@ -319,11 +302,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5659074977034777218}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-<<<<<<< HEAD
-  m_LocalPosition: {x: 0, y: -2.0800002, z: 0}
-=======
   m_LocalPosition: {x: 0, y: -6.6453695, z: 0}
->>>>>>> ccw
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1475009492483314827}
@@ -332,25 +311,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
---- !u!114 &5087926367329113681
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5659074977034777218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cae7263434cc8345bfe48960a140556, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rigidbody: {fileID: 0}
-  _isCollision: 0
---- !u!54 &-3001740796852598480
-=======
 --- !u!54 &-5902692244934407379
->>>>>>> ccw
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -366,8 +327,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
-<<<<<<< HEAD
-=======
 --- !u!114 &-3884531111263130122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -382,4 +341,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rigidbody: {fileID: 0}
   _isCollision: 0
->>>>>>> ccw
