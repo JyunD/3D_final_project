@@ -59,6 +59,7 @@ public class BlockBehaviour : MonoBehaviour
             rigidbody.useGravity = true;
             _isCollision = true;
             collision.gameObject.tag = "Untagged";
+            SpawnBlock._spawn = false;
         }
     }
 }
