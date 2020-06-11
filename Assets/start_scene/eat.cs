@@ -8,12 +8,19 @@ using UnityEngine.SceneManagement;
 public class eat : MonoBehaviour
 {
 
-    Animator eat_anim;
+    public Button _StartGame;
+    Animator anim;
+
+    public Camera _MainCamera;
+    public Camera _BlockCamera;
 
     // Start is called before the first frame update
+
+
     void Start()
     {
-        
+        anim = gameObject.GetComponent<Animator>();
+        _StartGame.onClick.AddListener(StartEat);
     }
 
     // Update is called once per frame
@@ -22,8 +29,12 @@ public class eat : MonoBehaviour
         
     }
 
-    void starteat()
+    void StartEat()
     {
-        eat_anim.SetTrigger("start");
+        _MainCamera.enabled = false;
+        _BlockCamera.enabled = true;
+        Debug.Log("Eat trigger");
+        anim.SetTrigger("start");
     }
 }
+
