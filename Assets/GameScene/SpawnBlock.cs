@@ -10,7 +10,7 @@ public class SpawnBlock : MonoBehaviour
     private float Timer = 0;
     public Object[] Bs;
     public GameObject B;
-    public static bool _spawn = false, end = false;
+    public static bool _spawn = false;
     public PlayerManager pm;
     public static int spawn_num = 0;
     public AudioSource _rotate_sound;
@@ -47,7 +47,7 @@ public class SpawnBlock : MonoBehaviour
         }
 
 
-        if (_spawn == false && Timer > 1 && end == false) {
+        if (_spawn == false && Timer > 1 && pm._end == false) {
             r = Random.Range(0, Bs.Length);
             B = Instantiate(Bs[r] as GameObject, new Vector3(-1, 14, 0), Quaternion.identity);
             B.transform.localScale = new Vector3(pm.block_size, pm.block_size, pm.block_size);
@@ -58,7 +58,7 @@ public class SpawnBlock : MonoBehaviour
         else
             Timer += Time.deltaTime * ext;
 
-        if (end == false)
+        if (pm._end == false)
         {
             //B.transform.Translate(Vector3.down * Time.deltaTime * 2 * pm.block_speed);
             B.transform.position = new Vector3(B.transform.position.x, B.transform.position.y - Time.deltaTime * 2 * speed, B.transform.position.z);

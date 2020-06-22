@@ -12,6 +12,7 @@ public class score : MonoBehaviour
     public GameObject _result;
     public Text ShowScore;
     public Text ShowAteBlocks;
+    public PlayerManager pm;
     private float Score = 0;
     Animator anim;
 
@@ -27,6 +28,8 @@ public class score : MonoBehaviour
         Invoke("ShowResult", 3);
         ShowScore.text = Score.ToString();
         ShowAteBlocks.text = "0";
+
+        pm = FindObjectOfType<PlayerManager>();
     }
 
     // Update is called once per frame
@@ -41,7 +44,7 @@ public class score : MonoBehaviour
         ShowScore.text = System.Math.Round(Score).ToString();
         ShowAteBlocks.text =  SpawnBlock.spawn_num.ToString();
         _result.SetActive(true);
-        SpawnBlock.end = false;
+        pm._end = false;
     }
 
     void Die()

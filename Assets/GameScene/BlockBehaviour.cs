@@ -8,18 +8,20 @@ public class BlockBehaviour : MonoBehaviour
     private AudioSource bruh;
     public Rigidbody rigidbody;
     public bool _isCollision = false, _collisionmap = false;
+    public PlayerManager pm;
     // Start is called before the first frame update
     void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
         bruh = GetComponent<AudioSource>();
+        pm = FindObjectOfType<PlayerManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
         if (Timer >= 1) {
-            SpawnBlock.end = true;
+            pm._end = true;
         }
     }
     private void OnCollisionEnter(Collision collision)

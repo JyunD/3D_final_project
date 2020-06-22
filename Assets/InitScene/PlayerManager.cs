@@ -9,6 +9,7 @@ public class PlayerManager : MonoBehaviour
     public float block_size;
     public float score;
     public string user_name;
+    public bool _end = false;
 
 
     private void Awake()
