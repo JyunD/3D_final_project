@@ -12,13 +12,16 @@ public class score : MonoBehaviour
     public GameObject _result;
     public Text ShowScore;
     public Text ShowAteBlocks;
+    public Text ShowName;
+
     public PlayerManager pm;
-    private float Score = 0;
     Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
+        pm = FindObjectOfType<PlayerManager>();
+
         _btn.onClick.AddListener(changeScene);
         rebtn.onClick.AddListener(reGame);
         _exit.onClick.AddListener(exitGame);
@@ -26,10 +29,10 @@ public class score : MonoBehaviour
         anim = body.GetComponent<Animator>();
         _result.SetActive(false);
         Invoke("ShowResult", 3);
-        ShowScore.text = Score.ToString();
+        ShowScore.text = pm.score.ToString();
         ShowAteBlocks.text = "0";
+        ShowName.text = pm.user_name;
 
-        pm = FindObjectOfType<PlayerManager>();
     }
 
     // Update is called once per frame
@@ -40,8 +43,7 @@ public class score : MonoBehaviour
 
     void ShowResult()
     {
-        Score = SetUI.Score;
-        ShowScore.text = System.Math.Round(Score).ToString();
+        ShowScore.text = System.Math.Round(pm.score).ToString();
         ShowAteBlocks.text =  pm.spawn_num.ToString();
         _result.SetActive(true);
         pm._end = false;
