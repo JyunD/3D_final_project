@@ -12,7 +12,6 @@ public class SpawnBlock : MonoBehaviour
     public GameObject B;
     public static bool _spawn = false;
     public PlayerManager pm;
-    public static int spawn_num = 0;
     public AudioSource _rotate_sound;
     private int r;
     private int c;
@@ -25,7 +24,7 @@ public class SpawnBlock : MonoBehaviour
     {
         Bs = Resources.LoadAll("", typeof(GameObject));
         pm = FindObjectOfType<PlayerManager>();
-        spawn_num = 0;
+        pm.spawn_num = 0;
         c = 0;
         speed = pm.block_speed;
         _binge.onClick.AddListener(Binge);
@@ -53,7 +52,7 @@ public class SpawnBlock : MonoBehaviour
             B.transform.localScale = new Vector3(pm.block_size, pm.block_size, pm.block_size);
             _spawn = true;
             Timer = 0;
-            spawn_num += 1;
+            pm.spawn_num += 1;
         }
         else
             Timer += Time.deltaTime * ext;

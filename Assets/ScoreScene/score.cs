@@ -42,7 +42,7 @@ public class score : MonoBehaviour
     {
         Score = SetUI.Score;
         ShowScore.text = System.Math.Round(Score).ToString();
-        ShowAteBlocks.text =  SpawnBlock.spawn_num.ToString();
+        ShowAteBlocks.text =  pm.spawn_num.ToString();
         _result.SetActive(true);
         pm._end = false;
     }

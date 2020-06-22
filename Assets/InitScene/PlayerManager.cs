@@ -9,6 +9,7 @@ public class PlayerManager : MonoBehaviour
     public float block_size;
     public float score;
     public string user_name;
+    public int spawn_num = 0;
     public bool _end = false;
 
 
